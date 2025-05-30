@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Builder</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      background-color: #f4f4f4;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    #message {
+      margin-top: 20px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Simple Resume Builder</h1>
+
+  <form id="resumeForm">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <input type="email" id="email" placeholder="Your Email" required />
+    <textarea id="summary" placeholder="Professional Summary" required></textarea>
+    <textarea id="education" placeholder="Education (e.g. B.Tech in CSE, XYZ University)" required></textarea>
+    <textarea id="experience" placeholder="Experience (e.g. Intern at ABC Corp)" required></textarea>
+    <input type="text" id="skills" placeholder="Skills (comma separated)" required />
+    <button type="submit">Generate Resume</button>
+  </form>
